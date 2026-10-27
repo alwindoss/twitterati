@@ -13,13 +13,13 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "twitterati",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "Download videos from tweets",
+	Long: `twitterati downloads the first available MP4 video from a tweet.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+Use the download command with a tweet URL, and optionally provide a filename
+for the downloaded video. For example:
+
+  twitterati download --url https://x.com/user/status/1234567890123456789`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
